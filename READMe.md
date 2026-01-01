@@ -1,21 +1,21 @@
-# What Drives the Price of a Car?
-The core of this project is exploring the key factors that influence the price of a used car, employing regression models and feature engineering.
+# Car Price Prediction
+The core of this project is exploring the key factors that influence car prices for used cars, using regression models and feature engineering.
 
 ## Overview
 We follow the CRISP-DM method to examine what features of a used car drive its price. The data is from a Kaggle set of used cars that contains $426,000 cars. It was scrapped off a national USA, used car website and placed onto the Kaggle website. It was provided to us as a .csv by our course administration.
 
 ## Contents
-In this repository is the Jupyter Workbook that was used to do feature engineering on the data set. There is the 'data' directory/folder containing one .csv file with the data. There is also a directory/folder called 'images' for two .jpg image files that came with the original assignment package that get displayed in the Jupyter Workbook. The Jupyter Workbook creates a directory for images of results called 'images_of_results'. Two .jpg image files are created and stored in that directory by the workbook and those images are displayed in the 'Deployment' section at the bottom of the workbook, in the final business report:
+In this repository is the Jupyter Workbook that was used to do feature engineering on the data set. There is the data directory/folder containing one .csv file with the date. There is also a directory/folder called “data”for two .jpg image files that came with the original get displayed in the Jupyter Workbook. The Jupyter Workbook creates a directory for results images called images_of_results. Two .jpg image files are created and stored in that directory by the workbook and those images are displayed in the ‘Deployment’ section at the bottom of the workbook in the final business report:
      relative_importance_top7.jpg - bar chart of the feature importance
      top_features_table.jpg - table of the most important values
 
 ## How to Run
-Load the Jupyter Workbook into a suitable platform (Colab/Anaconda etc) and ensure the platform has access to the data and images.
+Load the Jupyter into a suitable platform (Colab/Anaconda etc) and ensure the platform has access to the data and images.
 
 ## Results
 We found that a model can be build that relies heavily on these main features: year, cylinders, odometer and manufacturer. The year is by far the most influential on the price then cylinders and odometer are similar. Next is the manufacturer and then a big drop to state.
 
-Ridge regression was found to provide the best refinement of a polynomial model of degree 5. This 5 degree polynomial allows for non-linear, complex patterns in the data to be modelled. A plot was made of the model's curve for year against price. This reveals the year's complex curative that required a degree 5 polynomial to model its very high influence on the model.
+Ridge regression was found to provide the best refinement of a polynomial model of degree 5. This 5 degree polynomial allows for non-linear, complex patterns in the data to be modelled. A plot was made of the model’s curve for year against price. This reveals the year’s complex curative that required a degree 5 polynomial to model its very high influence on the model.
 
 We also determined which particular entries of those influential features are valued the most. Starting with the most influential and then listing the next three with decreasing influence, they are:
 
